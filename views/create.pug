@@ -1,0 +1,22 @@
+extends layout.pug
+
+block content
+
+    .container 
+        h1 Create a new record form
+        
+        form.form(action="/create" method='POST') 
+            label Title 
+            input.input(type="text" name="title")
+
+            label Number of edisodes 
+            input.input(type="number", name="episodes")
+
+            label Description 
+            textarea.input(type="text" name="description") 
+             
+            label Status 
+            input.input(type="text" name="status")
+                
+                
+            button.btn Submit

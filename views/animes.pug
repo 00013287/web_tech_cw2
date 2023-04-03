@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+    .table-container
+        table
+            each anime in animes 
+                tr.anime-wrapper 
+                    td
+                        a.anime(href="/anime/info")= anime 
+                    td
+                        a.delete(href="#") delete
+                    td
+                        a.update(href="#") update
+        
+    
+    //.container2
+        each anime in animes 
+            .anime-wrapper 
+                a.anime(href="#")= anime 
+                a.delete(href="#") delete
+                a.update(href="#") update //

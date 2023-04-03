@@ -1,0 +1,263 @@
+
+header.navbar h1 a{
+    color: rgb(118, 118, 169);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    
+}
+
+header.navbar {
+    margin-top: 70px;
+}
+
+header.navbar h1{
+    color: #333;
+    
+}
+
+header.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.nav a {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav.nav a:hover {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    color: rgb(118, 118, 169);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+a[href="/create"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(118, 118, 169);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+
+a[href="/create"]:hover {
+    background-color: white;
+    color: #333;
+    border: 2px solid rgb(118, 118, 169);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.container {
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 1000;
+  }
+
+  /* styles for a create page */
+
+  .container h1{
+    
+  
+    color: rgb(118, 118, 169);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form{
+   
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #333;
+    font-size: 22px;
+    
+
+}
+
+label {
+   
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+  
+.input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    font-size: 16px; 
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.btn{
+    color: #333;
+    background-color: rgb(118, 118, 169);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+ /* styles for an animes page */
+ .table-container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+ }
+table {
+    width: 50%; 
+  }
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 30px;
+    border-color: gray;
+    margin-left: 90px;
+} 
+  
+tr {
+    border-bottom: 1px solid #ccc; 
+}
+  
+td {
+    padding: 10px; 
+}
+  
+
+.anime {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none; 
+
+  }
+ 
+.anime:hover {
+    color: rgb(118, 118, 169);
+  }
+  
+
+  .delete {
+    color: #333;
+    background-color: rgb(118, 118, 169);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  
+  .delete:hover {
+    background-color: #d7d7d7;
+    color: rgb(118, 118, 169);
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  .update {
+    color: #333;
+    background-color: rgb(118, 118, 169);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  
+  .update:hover {
+    background-color: #d7d7d7;
+    color: rgb(118, 118, 169);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+/*styles for an info page */ 
+
+.container h3.title{
+    color: rgb(118, 118, 169);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+} 
+
+.container p{
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+
+}
+
+.border{
+    border: 5px solid #656565;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+       
