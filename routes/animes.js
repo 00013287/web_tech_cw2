@@ -4,15 +4,13 @@ let express = require('express')
 let router = express.Router()
 let uniqid = require('uniqid')
 
-// Read anime data from JSON file
+
 const animeData = fs.readFileSync('./data/animes.json');
 const animes = JSON.parse(animeData);
 
 router.get('/', (req, res) => {
     res.render('animes', { animes: getAll('animes')})
 })
-
-
 
 router.route('/create')
     .get((req, res) => {

@@ -46,7 +46,43 @@ app.get('/:id/delete', (req, res) => {
       })
     })
      })
+    
+app.post('/:id/update', (req, res) => {
+  const id = req.params.id;
+  const updatedAnime = req.body; 
 
+  fs.readFile('./data/animes.json', (err, data) => {
+    if (err) throw err;
+
+    const animes = JSON.parse(data);
+    const index = animes.findIndex(anime => anime.id === id);
+      if (index >= 0) {
+      
+      animes[index] = { ...animes[index], ...updatedAnime };
+
+      
+      fs.writeFile('./data/animes.json', JSON.stringify(animes), err => {
+        if (err) throw err;
+        res.render('animes', { animes: animes, updated: true });
+      });
+    } else {
+      
+      res.status(404).send(`Anime with id ${id} not found`);
+    }
+  });
+});
+    
+      
+
+/*app.get('/api/v1/animes', (req, res) => {
+    fs.readFile('./data/animes.json', (err, data) => {
+        if (err) throw err
+
+        const animes = JSON.parse(data)
+        res.json(animes)
+    })
+})
+*/
 app.get('/:id/update', (req, res) => {
         
           })
