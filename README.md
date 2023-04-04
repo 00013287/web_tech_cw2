@@ -24,4 +24,4 @@ node app.js
 - uniqid
 
 ### Web application resository on github
-[https://github.com/00013287/web_tech_cw2]
+[Link to the repository](https://github.com/00013287/web_tech_cw2)
