@@ -47,9 +47,27 @@ app.get('/:id/delete', (req, res) => {
      res.render('animes', {animes: filtered, deleted: true})
       })
     })
-     })
+})
+
+app.get('/:id/update', (req, res) => {
+      const id = req.params.id;
     
-app.post('/:id/update', (req, res) => {
+      fs.readFile('./data/animes.json', (err, data) => {
+        if (err) throw err;
+    
+        const animes = JSON.parse(data);
+        const anime = animes.find(anime => anime.id === id);
+    
+        if (anime) {
+          res.render('update', { anime: anime });
+        } else {
+          res.status(404).send(`Anime with id ${id} not found`);
+        }
+      });
+    });
+         
+    
+/*app.post('/:id/update', (req, res) => {
   const id = req.params.id;
   const updatedAnime = req.body; 
 
@@ -74,7 +92,7 @@ app.post('/:id/update', (req, res) => {
   });
 });
     
-      
+ */     
 
 /*app.get('/api/v1/animes', (req, res) => {
     fs.readFile('./data/animes.json', (err, data) => {
@@ -85,9 +103,7 @@ app.post('/:id/update', (req, res) => {
     })
 })
 */
-app.get('/:id/update', (req, res) => {
-        
-          })
+
         
 app.listen(3000, err => {
     if (err) console.log(err)

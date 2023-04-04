@@ -19,13 +19,7 @@ block content
             label Description 
             textarea.input(type="text" name="description") 
              
-            label Status
-            if statuses && statuses.length
-                select.input(name="status")
-                    each status in statuses 
-                        option(value= status.statusId, selected) #{ statuses.title } 
-            else 
-                p 
+            
                 
             button.btn Submit
 

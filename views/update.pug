@@ -1,0 +1,22 @@
+extends layout.pug
+
+
+
+block content
+
+    .container 
+        form.form(method="POST", action=`/${anime.id}/update`)
+        label(for="title") Title
+        input.input(type="text" id="title" name="title" value=`${anime.title}`)
+
+        label(for="episodes") Episodes
+        input.input(type="text" id="episodes" name="episodes" value=`${anime.episodes}`)
+
+        label(for="description") Description
+        textarea.input(id="description" name="description") #{anime.description}
+
+  
+        button.btn(type="submit") Update
+
+
+
