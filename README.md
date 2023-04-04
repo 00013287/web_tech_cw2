@@ -11,7 +11,7 @@ git clone [https://github.com/00013287/web_tech_cw2.git]
 2. Install dependencies
 ```bash
  cd [project folder]
- npm i express pug uniqid
+ npm i express pug uniqid express-validator
 ```
 3. Run the application
 ```bash
@@ -22,6 +22,7 @@ node app.js
 - express.js
 - pug.js
 - uniqid
+- express-validator
 
 ### Web application resository on github
 [Link to the repository](https://github.com/00013287/web_tech_cw2)
