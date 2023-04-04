@@ -1,0 +1,11 @@
+[
+    {
+        "statusId": 1,
+        "title": "Watching"
+    },
+    
+    {
+        "statusId": 2,
+        "title": "Watched"
+    }
+]

@@ -3,19 +3,17 @@ extends layout.pug
 block content
     .table-container
         table
-            each anime in animes 
-                tr.anime-wrapper 
-                    td
-                        a.anime(href="/anime/info")= anime 
-                    td
-                        a.delete(href="#") delete
-                    td
-                        a.update(href="#") update
-        
+            if animes.length
+                each anime in animes 
+                    tr.anime-wrapper 
+                        td
+                            a.anime(href=`/animes/${anime.id}`)  #{anime.title}
+                            a.anime(href=`/animes/${anime.id}`)  #{anime.edisodes} 
+                        td
+                            a.update-btn(href=`/${anime.id}/update`) Update 
+                        td
+                            a.delete-btn(href=`/${anime.id}/delete`) Delete 
+
+            else 
+                p No records found
     
-    //.container2
-        each anime in animes 
-            .anime-wrapper 
-                a.anime(href="#")= anime 
-                a.delete(href="#") delete
-                a.update(href="#") update //

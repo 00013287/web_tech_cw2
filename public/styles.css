@@ -143,7 +143,7 @@ label {
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     padding: 10px 20px;
@@ -193,7 +193,7 @@ td {
   }
   
 
-  .delete {
+td .update-btn {
     color: #333;
     background-color: rgb(118, 118, 169);
     color: white;
@@ -207,14 +207,14 @@ td {
     padding: 10px 20px;
   }
   
-  .delete:hover {
+  td .update-btn:hover {
     background-color: #d7d7d7;
     color: rgb(118, 118, 169);
     font-family: 'Poppins', sans-serif;
     
   }
   
-  .update {
+  td .delete-btn {
     color: #333;
     background-color: rgb(118, 118, 169);
     color: white;
@@ -228,7 +228,7 @@ td {
     padding: 10px 20px;
   }
   
-  .update:hover {
+  td .delete-btn:hover {
     background-color: #d7d7d7;
     color: rgb(118, 118, 169);
     font-family: 'Poppins', sans-serif;
@@ -248,10 +248,14 @@ td {
     color: #333;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-
+}
+.container p.web{
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin-top: 15%;
 
 }
-
 .border{
     border: 5px solid #656565;
     width: 30%;
